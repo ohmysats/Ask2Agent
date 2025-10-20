@@ -27,4 +27,13 @@
     <style name="Platform.Theme.App.NoDisplay" parent="Platform.V23.Theme.App.NoDisplay" />
     <style name="Base.Theme.App.NoDisplay" parent="Platform.Theme.App.NoDisplay" />
     <style name="Theme.App.NoDisplay" parent="Base.Theme.App.NoDisplay" />
+
+    <style name="Theme.App.Dialog" parent="Theme.App">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>

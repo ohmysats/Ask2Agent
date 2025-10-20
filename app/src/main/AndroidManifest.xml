@@ -9,6 +9,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -56,5 +59,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".OllamaResultActivity"
+            android:exported="false"
+            android:label="@string/ollama_result_title"
+            android:theme="@style/Theme.App.Dialog" />
     </application>
 </manifest>
